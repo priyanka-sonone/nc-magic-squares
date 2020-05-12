@@ -1,8 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import Card from './Card';
 import Headers from './Headers';
-import request from './request';
+// import request from './request';
 import data from '../data';
 
 class Main extends React.Component {

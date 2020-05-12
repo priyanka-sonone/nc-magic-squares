@@ -1,5 +1,6 @@
 import React from 'react';
-import * as audio from './audio';
+import logo from '../assets/img/react.svg'
+// import * as audio from './audio';
 
 class Card extends React.Component {
 
@@ -10,18 +11,20 @@ class Card extends React.Component {
 
     clickHandler(event) {
         if (this.state.view === 'points') {
-            audio.play("flip");
-            setTimeout(() => {
-                if (this.state.view === "question") {
-                    audio.play("countdown");
-                }
-            }, 1800);
+            // audio.play("flip");
+            // setTimeout(() => {
+            //     if (this.state.view === "question") {
+            //         // audio.play("countdown");
+            //     }
+            // }, 1800);
             this.setState({view: 'question', flipping: true});
-        } else if (this.state.view === 'question') {
-            audio.stop("countdown");
-            this.setState({view: 'answer'});
-        } else {
-            audio.play("flipBack");
+        } 
+        // else if (this.state.view === 'question') {
+        //     audio.stop("countdown");
+        //     this.setState({view: 'answer'});
+        // } 
+        else {
+            //audio.play("flipBack");
             this.setState({view: 'points', completed: true, flipping: true});
         }
     }
@@ -43,7 +46,7 @@ class Card extends React.Component {
                 transform: 'translate3d(' + this.props.left + 'px,' + this.props.top + 'px,0)',
                 WebkitTransform: 'translate3d(' + this.props.left + 'px,' + this.props.top + 'px,0)'
             },
-            front = this.state.completed ? <img src='assets/img/react.svg'/> : <span className='points'>{this.props.question.points}</span>,
+            front = this.state.completed ? <img src={logo} alt='React logo'/> : <span className='points'>{this.props.question.points}</span>,
             className = 'flipper';
 
         if (this.state.view !== 'points') {
@@ -60,7 +63,7 @@ class Card extends React.Component {
                     </div>
                     <div className='back'>
                         <span dangerouslySetInnerHTML={this.getLabelBack()}/>
-                        <img src='assets/img/react.svg'/>
+                        <img src={logo } alt='React logo' />
                     </div>
                 </div>
             </div>
