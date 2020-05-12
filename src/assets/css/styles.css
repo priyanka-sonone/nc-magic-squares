@@ -113,7 +113,7 @@ p {
     padding: 0 50px;
 }
 
-.flipper.done .front > .points {
+.flipper.done .front > .number {
     display: none;
 }
 
