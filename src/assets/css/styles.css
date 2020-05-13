@@ -31,18 +31,23 @@ p {
     display: -webkit-flex;
     display: flex;
     align-items: center;
-    padding: 0 0 0 22em;
+    padding: 0 0 0 24em;
    height: 60px;
     justify-content: center;
     font-weight: bold;
 }
-.footer{
+
+.signout {
+    position: inherit;
+    left: 1582px;
+}
+/* .footer{
     background-color:red;
     height:50px;
     position: absolute;
     bottom:20px;
     width:100%;
-}
+} */
 
 .headers>.header {
     display: inline-block;
@@ -182,6 +187,42 @@ code {
     font-family: 'Source Code Pro', monospace;
     text-align: left;
 }
+
+.Modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    padding: 2em;
+    min-width: 20em;
+    max-width: 70%;
+    color: #5a3a97;
+    background-color: #fff;
+    border-radius: 1em;
+    transform: translate(-50%, -50%);
+    outline: transparent;
+  }
+  .Overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.4);
+  }
+
+  .modalText{
+      text-align: center;
+  }
+
+  .closeModal{
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 14px;
+      color: #5a3a97;
+      border: 1px solid #5a3a97;
+
+  }
 
 @media screen and (min-width : 641px) and (max-width : 1024px) {
 

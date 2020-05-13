@@ -17,7 +17,7 @@ class Card extends React.Component {
                 if (this.state.view === "question") {
                      audio.play("tada");
                 }
-            }, 200);
+            }, 700);
             this.setState({view: 'question', flipping: true});
         } 
         // else if (this.state.view === 'question') {
@@ -31,7 +31,7 @@ class Card extends React.Component {
     }
 
     getLabelBack() {
-        return {__html: this.state.view === 'question' ? this.props.question.question : this.props.question.answer};
+        return {__html: this.state.view === 'question' ? this.props.question.question : null};
     }
 
     transitionEndHandler(event) {
@@ -49,7 +49,7 @@ class Card extends React.Component {
             },
             front = this.state.completed ? <img src={check} alt='Check Mark'/> : <span className='number'>{this.props.question.number}</span>,
             className = 'flipper';
-
+            console.log('this.props.question.number',this.props.question.number);
         if (this.state.view !== 'number') {
             className = className + ' flipped';
         }
@@ -57,6 +57,13 @@ class Card extends React.Component {
             className = className + ' flipping';
             console.log("style",style)
         }
+
+        // if (this.state.view !== 'number')  {
+        //     // this.setState({gameStatus: "You Lost."});
+        //     // this.revealBoard();
+        //     alert("game over");
+        //     console.log('Game over')
+        // }
 
         return (
             <div style={style} className={className} onClick={this.clickHandler.bind(this)} onTransitionEnd={this.transitionEndHandler.bind(this)}>
@@ -66,7 +73,7 @@ class Card extends React.Component {
                     </div>
                     <div className='back'>
                         <span dangerouslySetInnerHTML={this.getLabelBack()}/>
-                        <img src={logo } alt='React logo' />
+                        <img src={logo } alt='Netcentric logo' />
                     </div>
                 </div>
             </div>
