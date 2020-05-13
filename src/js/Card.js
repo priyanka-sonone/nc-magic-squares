@@ -43,7 +43,7 @@ class Card extends React.Component {
         let style = {
                 width: this.props.width + 'px',
                 height: this.props.height + 'px',
-                transform: 'translate3d(' + this.props.left + 'px,' + this.props.top + 'px,0)',
+                transform: 'translate3d(' + this.props.left + 'px,' +0+ 'px,0)',
                 WebkitTransform: 'translate3d(' + this.props.left + 'px,' + this.props.top + 'px,0)'
             },
             front = this.state.completed ? <img src={logo} alt='React logo'/> : <span className='number'>{this.props.question.number}</span>,
@@ -54,6 +54,7 @@ class Card extends React.Component {
         }
         if (this.state.flipping) {
             className = className + ' flipping';
+            console.log("style",style)
         }
 
         return (
