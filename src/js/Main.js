@@ -73,8 +73,11 @@ class Main extends React.Component {
             <div>
                 {/* <Headers data={this.state.data} headerWidth={cardWidth}/> */}
                 <Headers data={this.state.data} />
+                {/* <div className='headers-text'>  Netcentric Fun Quiz</div> */}
                 {cards}
+                {/* <div className="footer">Footer</div> */}
             </div>
+            
         );
     }
 
