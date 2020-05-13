@@ -1,6 +1,6 @@
 var data = [
   {
-    "category": "Row 1",
+    "category": "Column 1",
     "questions": [
       {
         "number": 1,
@@ -45,7 +45,7 @@ var data = [
     ]
   },
   {
-    "category": "Row 2",
+    "category": "Column 2",
     "questions": [
       {
         "number": 11,
@@ -90,7 +90,7 @@ var data = [
     ]
   },
   {
-    "category": "Row 3",
+    "category": "Column 3",
     "questions": [
       {
         "number": 21,
@@ -135,7 +135,7 @@ var data = [
     ]
   },
   {
-    "category": "Row 4",
+    "category": "Column 4",
     "questions": [
       {
         "number": 31,
@@ -180,7 +180,7 @@ var data = [
     ]
   },
   {
-    "category": "Row 5",
+    "category": "Column 5",
     "questions": [
       {
         "number": 41,
@@ -225,7 +225,7 @@ var data = [
     ]
   },
   {
-    "category": "Row 6",
+    "category": "Column 6",
     "questions": [
       {
         "number": 51,
@@ -270,7 +270,7 @@ var data = [
     ]
   },
   {
-    "category": "Row 7",
+    "category": "Column 7",
     "questions": [
       {
         "number": 61,
@@ -315,7 +315,7 @@ var data = [
     ]
   },
   {
-    "category": "Row 8",
+    "category": "Column 8",
     "questions": [
       {
         "number": 71,
@@ -360,7 +360,7 @@ var data = [
     ]
   },
   {
-    "category": "Row 9",
+    "category": "Column 9",
     "questions": [
       {
         "number": 81,
@@ -405,7 +405,7 @@ var data = [
     ]
   },
   {
-    "category": "Row 10",
+    "category": "Column 10",
     "questions": [
       {
         "number": 91,
