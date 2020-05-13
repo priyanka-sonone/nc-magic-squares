@@ -1,7 +1,14 @@
+import soundFlip from '../assets/audio/card-flip.mp3'
+import soundFlipback from '../assets/audio/card-flip-back.mp3'
+import soundTada from '../assets/audio/drumroll.mp3'
+
 let sounds = {};
-sounds.flip = new Audio("../assets/audio/card-flip.mp3");
-sounds.flipBack = new Audio("../assets/audio/card-flip-back.mp3");
-sounds.countdown = new Audio("../assets/audio/countdown.wav");
+// sounds.flip = new Audio("flip");
+ sounds.flip = new Audio(soundFlip);
+ sounds.flipBack = new Audio(soundFlipback);
+ sounds.tada = new Audio(soundTada);
+// sounds.flipBack = new Audio("../assets/audio/card-flip-back.mp3");
+// sounds.countdown = new Audio("../assets/audio/countdown.wav");
 
 export let play = sound => {
     if (sounds[sound]) {
