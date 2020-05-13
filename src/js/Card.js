@@ -55,6 +55,7 @@ class Card extends React.Component {
         if (this.state.flipping) {
             className = className + ' flipping';
         }
+
         return (
             <div style={style} className={className} onClick={this.clickHandler.bind(this)} onTransitionEnd={this.transitionEndHandler.bind(this)}>
                 <div className='card'>

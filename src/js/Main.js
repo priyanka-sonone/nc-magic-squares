@@ -71,7 +71,8 @@ class Main extends React.Component {
         });
         return (
             <div>
-                <Headers data={this.state.data} headerWidth={cardWidth}/>
+                {/* <Headers data={this.state.data} headerWidth={cardWidth}/> */}
+                <Headers data={this.state.data} />
                 {cards}
             </div>
         );
