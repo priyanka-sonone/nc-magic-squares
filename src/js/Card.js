@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from '../assets/img/n1.svg';
 import check from '../assets/img/check.svg';
 import * as audio from './audio';
+import data from '../data';
+import { red } from 'color-name';
 
-class Card extends React.Component {
+
+class Card extends Component {
 
     constructor(props) {
         super(props);
@@ -15,15 +18,16 @@ class Card extends React.Component {
              audio.play("flip");
             setTimeout(() => {
                 if (this.state.view === "question") {
-                     audio.play("tada");
+                    if(this.props.question.type === "A"){
+                        audio.play("tada");
+                    }
+                    else if(this.props.question.type === "B"){
+                        audio.play("lost");
+                    }      
                 }
             }, 700);
             this.setState({view: 'question', flipping: true});
         } 
-        // else if (this.state.view === 'question') {
-        //     audio.stop("countdown");
-        //     this.setState({view: 'answer'});
-        // } 
         else {
             audio.play("flipBack");
             this.setState({view: 'number', completed: true, flipping: true});
@@ -31,12 +35,18 @@ class Card extends React.Component {
     }
 
     getLabelBack() {
-        return {__html: this.state.view === 'question' ? this.props.question.question : null};
+        // return {__html: this.state.view === 'question' ? this.props.question.question : null};
+        console.log(JSON.stringify(this.props.question.icon));
+        
+    //    return {__html: <img src = {this.props.question.icon} alt=""/> + this.props.question.question}
+    return {__html: this.props.question.question}       
     }
 
     transitionEndHandler(event) {
         if (event.propertyName === 'width') {
             this.setState({flipping: false});
+            console.log("event.propertyName === 'width'",event.propertyName === 'width')
+            console.log('event.propertyName',event.propertyName);
         }
     }
 
@@ -49,29 +59,32 @@ class Card extends React.Component {
             },
             front = this.state.completed ? <img src={check} alt='Check Mark'/> : <span className='number'>{this.props.question.number}</span>,
             className = 'flipper';
-            console.log('this.props.question.number',this.props.question.number);
+            let showImage;
+
         if (this.state.view !== 'number') {
             className = className + ' flipped';
         }
         if (this.state.flipping) {
             className = className + ' flipping';
-            console.log("style",style)
+
+        }
+        if(this.props.question){
+             showImage = <img src={this.props.question.icon} alt='Check Mark' height="100px" width="200"/>
         }
 
-        // if (this.state.view !== 'number')  {
-        //     // this.setState({gameStatus: "You Lost."});
-        //     // this.revealBoard();
-        //     alert("game over");
-        //     console.log('Game over')
-        // }
+        let frontStyle ={
+            backgroundColor: this.props.question.color,
+            border: '1px solid'+ this.props.question.color
+        }
 
         return (
             <div style={style} className={className} onClick={this.clickHandler.bind(this)} onTransitionEnd={this.transitionEndHandler.bind(this)}>
                 <div className='card'>
-                    <div className='front'>
+                    <div style={frontStyle} className='front'>
                         {front}
                     </div>
                     <div className='back'>
+                        <p>{showImage}</p>
                         <span dangerouslySetInnerHTML={this.getLabelBack()}/>
                         <img src={logo } alt='Netcentric logo' />
                     </div>
@@ -79,7 +92,6 @@ class Card extends React.Component {
             </div>
         );
     }
-
 };
 
 export default Card;

@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Modal from 'react-modal';
-// import data from '../data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignOutAlt,faSmile} from '@fortawesome/free-solid-svg-icons'
 
-class Headers extends React.Component {
+class Headers extends Component {
 
     constructor () {
         super();
@@ -27,7 +26,7 @@ class Headers extends React.Component {
     render() {
         return (
             <div className='headers'>
-                Netcentric Fun Quiz
+                <div>Netcentric Fun Quiz </div>
                 <span className="signout">
                 <FontAwesomeIcon icon={faSignOutAlt} onClick={this.handleOpenModal}/>
                 </span>
@@ -41,12 +40,12 @@ class Headers extends React.Component {
           >
             <div className='modalText'>
                 <h2>Game Over</h2>
-                <h3>Thanks for Participating    
+                <h3>Thank you for Participating    
                 <FontAwesomeIcon icon={faSmile}/>
                 </h3>
-                {/* <button className="closeModal" onClick={this.handleCloseModal}>
+                <button className="closeModal" onClick={this.handleCloseModal}>
                     Close
-                </button> */}
+                </button>
             </div>
             
           </Modal>
