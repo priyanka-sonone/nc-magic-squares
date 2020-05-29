@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../assets/img/n1.svg';
+import logo from '../assets/img/NC_logo_white.png';
 import check from '../assets/img/check.svg';
 import * as audio from './audio';
 import data from '../data';
@@ -69,7 +69,7 @@ class Card extends Component {
 
         }
         if(this.props.question){
-             showImage = <img src={this.props.question.icon} alt='Check Mark' height="100px" width="200"/>
+             showImage = <img src={this.props.question.icon} alt='Check Mark' height="150" width="300"/>
         }
 
         let frontStyle ={
