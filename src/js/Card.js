@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import logo from '../assets/img/NC_logo_white.png';
 import check from '../assets/img/check.svg';
 import * as audio from './audio';
-import data from '../data';
-import { red } from 'color-name';
-
-
 class Card extends Component {
 
     constructor(props) {
@@ -69,8 +65,10 @@ class Card extends Component {
 
         }
         if(this.props.question){
-             showImage = <img src={this.props.question.icon} alt='Check Mark' height="150" width="300"/>
-        }
+                showImage = <img src={this.props.question.icon} alt='Check Mark' height="150" width="300"/>
+
+            }
+        
 
         let frontStyle ={
             backgroundColor: this.props.question.color,
