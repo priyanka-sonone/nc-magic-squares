@@ -43,8 +43,6 @@ class Main extends Component {
             // cardWidth = 168,
             // cardHeight = 168,
             cards = [];
-            console.log("cardWidth",cardWidth);
-            console.log("cardHeight",cardHeight);
 
         this.state.data.forEach((category, categoryIndex) => {
             let left = categoryIndex * cardWidth;
