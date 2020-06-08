@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "47d09bca7b027a407269fbed04a92c39",
+    "revision": "c5f91af39fec3adf09af9f4fa09a7dab",
     "url": "/nc-magic-squares/index.html"
   },
   {
-    "revision": "c8f0d6943d0dc2bdd273",
+    "revision": "2f76e5216eb142f3d540",
     "url": "/nc-magic-squares/static/css/main.183f54dd.chunk.css"
   },
   {
-    "revision": "11f0b3a1b57e94dc24f9",
-    "url": "/nc-magic-squares/static/js/2.f0484c85.chunk.js"
+    "revision": "3a2e16ac1a2f258b46eb",
+    "url": "/nc-magic-squares/static/js/2.df2df24a.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/nc-magic-squares/static/js/2.f0484c85.chunk.js.LICENSE.txt"
+    "url": "/nc-magic-squares/static/js/2.df2df24a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c8f0d6943d0dc2bdd273",
-    "url": "/nc-magic-squares/static/js/main.405393ea.chunk.js"
+    "revision": "2f76e5216eb142f3d540",
+    "url": "/nc-magic-squares/static/js/main.4f0d7b37.chunk.js"
   },
   {
     "revision": "195176105746967169bc",
