@@ -770,7 +770,7 @@ var data = [
       {
         "number": 99,
         "type": "B",
-        "icon":logo,
+        "icon": share_bonusly_1,
         "color": "#7eaa38",
         "question": "You are so kind, share 05 bonulsy points for a great work with someone",
       },

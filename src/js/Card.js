@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from '../assets/img/NC_logo_white.png';
 import check from '../assets/img/check.svg';
 import * as audio from './audio';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheckCircle} from '@fortawesome/free-solid-svg-icons'
 class Card extends Component {
 
     constructor(props) {
@@ -53,7 +55,7 @@ class Card extends Component {
                 transform: 'translate3d(' + this.props.left + 'px,' +0+ 'px,0)',
                 WebkitTransform: 'translate3d(' + this.props.left + 'px,' + this.props.top + 'px,0)'
             },
-            front = this.state.completed ? <img src={check} alt='Check Mark'/> : <span className='number'>{this.props.question.number}</span>,
+            front = this.state.completed ? <div class="numberCompleted">{this.props.question.number} <FontAwesomeIcon icon={faCheckCircle}/> </div> : <span className='number'>{this.props.question.number}</span>,
             className = 'flipper';
             let showImage;
 
@@ -65,7 +67,7 @@ class Card extends Component {
 
         }
         if(this.props.question){
-                showImage = <img src={this.props.question.icon} alt='Check Mark' height="150" width="300"/>
+                showImage = <img src={this.props.question.icon } alt='Check Mark' height="150" width="300"/>
 
             }
         
