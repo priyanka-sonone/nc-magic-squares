@@ -1,7 +1,5 @@
  import lottery from "../src/assets/img/lottery.gif"
-import logo from '../src/assets/img/n1.svg';
 import share from '../src/assets/img/share.gif'
-import amitabh from '../src/assets/img/amitabh.gif'
 import minion from '../src/assets/img/minion.gif'
 import secret from '../src/assets/img/secret.gif'
 import smile from '../src/assets/img/smile.gif'

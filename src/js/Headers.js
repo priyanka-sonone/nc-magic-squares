@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Modal from 'react-modal';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSignOutAlt,faSmile} from '@fortawesome/free-solid-svg-icons'
+// import Modal from 'react-modal';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faSignOutAlt,faSmile} from '@fortawesome/free-solid-svg-icons'
 
 class Headers extends Component {
 
