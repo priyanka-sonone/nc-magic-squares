@@ -146,6 +146,14 @@ p {
     font-weight: 300;
     padding: 0 50px;
 }
+ .close{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    width: 75px;
+    font-size: 38px;
+
+}
 
 .flipper.done .front > .number {
     display: none;
