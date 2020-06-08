@@ -27,10 +27,10 @@ class Headers extends Component {
         return (
             <div className='headers'>
                 <div> Netcentric Magic Squares </div>
-                <span className="signout">
+                {/* <span className="signout">
                 <FontAwesomeIcon icon={faSignOutAlt} onClick={this.handleOpenModal}/>
-                </span>
-                <Modal 
+                </span> */}
+                {/* <Modal 
              isOpen={this.state.showModal}
              contentLabel="Minimal Modal Example"
              ariaHideApp={false}
@@ -48,7 +48,7 @@ class Headers extends Component {
                 </button>
             </div>
             
-          </Modal>
+          </Modal> */}
             </div>
         );
     }

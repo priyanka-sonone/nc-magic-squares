@@ -34,9 +34,9 @@ p {
     font-weight: bold;
 }
 
-.signout {
+/* .signout {
     margin-left: 18em
-}
+} */
 
 .headers>.header {
     display: inline-block;
@@ -184,7 +184,7 @@ code {
     text-align: left;
 }
 
-.Modal {
+/* .Modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -218,7 +218,7 @@ code {
       color: #5a3a97;
       border: 1px solid #5a3a97;
 
-  }
+  } */
 
 @media screen and (min-width : 641px) and (max-width : 1024px) {
 

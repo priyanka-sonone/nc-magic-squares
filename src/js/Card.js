@@ -34,7 +34,7 @@ class Card extends Component {
 
     getLabelBack() {
         // return {__html: this.state.view === 'question' ? this.props.question.question : null};
-        console.log(JSON.stringify(this.props.question.icon));
+        // console.log(JSON.stringify(this.props.question.icon));
         
     //    return {__html: <img src = {this.props.question.icon} alt=""/> + this.props.question.question}
     return {__html: this.props.question.question}       
@@ -43,8 +43,8 @@ class Card extends Component {
     transitionEndHandler(event) {
         if (event.propertyName === 'width') {
             this.setState({flipping: false});
-            console.log("event.propertyName === 'width'",event.propertyName === 'width')
-            console.log('event.propertyName',event.propertyName);
+            // console.log("event.propertyName === 'width'",event.propertyName === 'width')
+            // console.log('event.propertyName',event.propertyName);
         }
     }
 
