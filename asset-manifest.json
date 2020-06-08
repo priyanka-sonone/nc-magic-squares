@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/nc-quiz-game/static/css/main.315cae90.chunk.css",
-    "main.js": "/nc-quiz-game/static/js/main.84e4fd9a.chunk.js",
-    "main.js.map": "/nc-quiz-game/static/js/main.84e4fd9a.chunk.js.map",
+    "main.css": "/nc-quiz-game/static/css/main.2b808b22.chunk.css",
+    "main.js": "/nc-quiz-game/static/js/main.3c2294f8.chunk.js",
+    "main.js.map": "/nc-quiz-game/static/js/main.3c2294f8.chunk.js.map",
     "runtime-main.js": "/nc-quiz-game/static/js/runtime-main.0bf5ad70.js",
     "runtime-main.js.map": "/nc-quiz-game/static/js/runtime-main.0bf5ad70.js.map",
-    "static/js/2.7538f501.chunk.js": "/nc-quiz-game/static/js/2.7538f501.chunk.js",
-    "static/js/2.7538f501.chunk.js.map": "/nc-quiz-game/static/js/2.7538f501.chunk.js.map",
+    "static/js/2.fa7e398a.chunk.js": "/nc-quiz-game/static/js/2.fa7e398a.chunk.js",
+    "static/js/2.fa7e398a.chunk.js.map": "/nc-quiz-game/static/js/2.fa7e398a.chunk.js.map",
     "index.html": "/nc-quiz-game/index.html",
-    "precache-manifest.74bb72f550acf4d02a964eb639c573cf.js": "/nc-quiz-game/precache-manifest.74bb72f550acf4d02a964eb639c573cf.js",
+    "precache-manifest.6427f5ae04db8efaabd0ef4163fb50f0.js": "/nc-quiz-game/precache-manifest.6427f5ae04db8efaabd0ef4163fb50f0.js",
     "service-worker.js": "/nc-quiz-game/service-worker.js",
-    "static/css/main.315cae90.chunk.css.map": "/nc-quiz-game/static/css/main.315cae90.chunk.css.map",
-    "static/js/2.7538f501.chunk.js.LICENSE.txt": "/nc-quiz-game/static/js/2.7538f501.chunk.js.LICENSE.txt",
+    "static/css/main.2b808b22.chunk.css.map": "/nc-quiz-game/static/css/main.2b808b22.chunk.css.map",
+    "static/js/2.fa7e398a.chunk.js.LICENSE.txt": "/nc-quiz-game/static/js/2.fa7e398a.chunk.js.LICENSE.txt",
     "static/media/NC_logo_white.png": "/nc-quiz-game/static/media/NC_logo_white.9dc240bc.png",
     "static/media/amitabh.gif": "/nc-quiz-game/static/media/amitabh.df2294d9.gif",
     "static/media/army.gif": "/nc-quiz-game/static/media/army.60e65d8e.gif",
@@ -22,7 +22,6 @@
     "static/media/car.gif": "/nc-quiz-game/static/media/car.db9cf815.gif",
     "static/media/card-flip-back.mp3": "/nc-quiz-game/static/media/card-flip-back.6860f843.mp3",
     "static/media/card-flip.mp3": "/nc-quiz-game/static/media/card-flip.c27111d8.mp3",
-    "static/media/check.svg": "/nc-quiz-game/static/media/check.acdcc51b.svg",
     "static/media/chocolate.gif": "/nc-quiz-game/static/media/chocolate.4359ca03.gif",
     "static/media/cooking.gif": "/nc-quiz-game/static/media/cooking.930959c0.gif",
     "static/media/drumroll.mp3": "/nc-quiz-game/static/media/drumroll.0bb843d5.mp3",
@@ -54,8 +53,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0bf5ad70.js",
-    "static/js/2.7538f501.chunk.js",
-    "static/css/main.315cae90.chunk.css",
-    "static/js/main.84e4fd9a.chunk.js"
+    "static/js/2.fa7e398a.chunk.js",
+    "static/css/main.2b808b22.chunk.css",
+    "static/js/main.3c2294f8.chunk.js"
   ]
 }

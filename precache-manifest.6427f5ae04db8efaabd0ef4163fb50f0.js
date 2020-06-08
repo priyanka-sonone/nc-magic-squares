@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e03d4dbfdb6e05351cf7e243d61eb07b",
+    "revision": "7d9a18840bdebf0e577f9c9cdd14a62f",
     "url": "/nc-quiz-game/index.html"
   },
   {
-    "revision": "a4235c84bbc2c5600797",
-    "url": "/nc-quiz-game/static/css/main.315cae90.chunk.css"
+    "revision": "9db648983685ccb10a19",
+    "url": "/nc-quiz-game/static/css/main.2b808b22.chunk.css"
   },
   {
-    "revision": "1e26d7a65bea1dace893",
-    "url": "/nc-quiz-game/static/js/2.7538f501.chunk.js"
+    "revision": "5f24334968ea463d001f",
+    "url": "/nc-quiz-game/static/js/2.fa7e398a.chunk.js"
   },
   {
     "revision": "531d7b2065717e21d8dbdd1394bf24a4",
-    "url": "/nc-quiz-game/static/js/2.7538f501.chunk.js.LICENSE.txt"
+    "url": "/nc-quiz-game/static/js/2.fa7e398a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a4235c84bbc2c5600797",
-    "url": "/nc-quiz-game/static/js/main.84e4fd9a.chunk.js"
+    "revision": "9db648983685ccb10a19",
+    "url": "/nc-quiz-game/static/js/main.3c2294f8.chunk.js"
   },
   {
     "revision": "9bb7a99db5b1c04db3c8",
@@ -62,10 +62,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c27111d8fd9b993ab70888bf12fd471f",
     "url": "/nc-quiz-game/static/media/card-flip.c27111d8.mp3"
-  },
-  {
-    "revision": "acdcc51ba5058e0789c8e33a5b811863",
-    "url": "/nc-quiz-game/static/media/check.acdcc51b.svg"
   },
   {
     "revision": "4359ca0311505eb964385bcc19fd9627",
