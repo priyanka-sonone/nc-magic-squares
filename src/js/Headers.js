@@ -5,23 +5,23 @@ import React, { Component } from 'react';
 
 class Headers extends Component {
 
-    constructor () {
-        super();
-        this.state = {
-          showModal: false
-        };
+    // constructor () {
+    //     super();
+    //     this.state = {
+    //       showModal: false
+    //     };
       
-      this.handleOpenModal = this.handleOpenModal.bind(this);
-      this.handleCloseModal = this.handleCloseModal.bind(this);
-    }
+    //   this.handleOpenModal = this.handleOpenModal.bind(this);
+    //   this.handleCloseModal = this.handleCloseModal.bind(this);
+    // }
     
-    handleOpenModal () {
-      this.setState({ showModal: true });
-    }
+    // handleOpenModal () {
+    //   this.setState({ showModal: true });
+    // }
     
-    handleCloseModal () {
-      this.setState({ showModal: false });
-    }
+    // handleCloseModal () {
+    //   this.setState({ showModal: false });
+    // }
     
     render() {
         return (
