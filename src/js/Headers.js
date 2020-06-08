@@ -26,7 +26,7 @@ class Headers extends Component {
     render() {
         return (
             <div className='headers'>
-                <div>Netcentric Fun Quiz </div>
+                <div> Netcentric Magic Squares </div>
                 <span className="signout">
                 <FontAwesomeIcon icon={faSignOutAlt} onClick={this.handleOpenModal}/>
                 </span>

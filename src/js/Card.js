@@ -55,7 +55,7 @@ class Card extends Component {
                 transform: 'translate3d(' + this.props.left + 'px,' +0+ 'px,0)',
                 WebkitTransform: 'translate3d(' + this.props.left + 'px,' + this.props.top + 'px,0)'
             },
-            front = this.state.completed ? <div>{this.props.question.number} <FontAwesomeIcon icon={faCheckCircle}/> </div> : <span className='number'>{this.props.question.number}</span>,
+            front = this.state.completed ?  <FontAwesomeIcon icon={faCheckCircle}/> : <span className='number'>{this.props.question.number}</span>,
             className = 'flipper';
             let showImage;
 
